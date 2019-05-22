@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
-main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -12,6 +11,10 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('EasyList'),
         ),
+        body: Card(child: Column(children: <Widget>[
+          Image.asset('assets/food.jpeg'),
+          Text('Food Paradise')
+        ],),),
       ),
     );
   }
